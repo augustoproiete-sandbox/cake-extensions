@@ -14,8 +14,18 @@ Copyright (C) C. Augusto Proiete & Contributors
 
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <ItemGroup>
-    <PackageReference Update="Cake.Extensions.PoC" PrivateAssets="All" />
-  </ItemGroup>
+  <Target Name="_CakeExtensionsVerifyDevelopmentDependencySet"
+          AfterTargets="BeforeBuild"
+          BeforeTargets="CoreBuild">
 
+    <ItemGroup>
+      <CakeExtensionsPackageReference Include="The package reference for '%(PackageReference.Identity)' does not contain PrivateAssets='All' [$(TargetFramework)]"
+                                      Condition=" '%(PackageReference.Identity)' == 'Cake.Extensions.PoC' and '%(PackageReference.PrivateAssets)' != 'All' " />
+    </ItemGroup>
+
+    <Warning Code="CCG0004"
+             Text="@(CakeExtensionsPackageReference)"
+             Condition=" '@(CakeExtensionsPackageReference)' != '' " />
+
+  </Target>
 </Project>
