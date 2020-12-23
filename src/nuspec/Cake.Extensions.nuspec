@@ -16,16 +16,16 @@
     <repository type="git" url="https://github.com/augustoproiete/cake-extensions.git" />
     <dependencies>
       <group targetFramework="net5.0">
-        <dependency id="Cake.Core" version="1.0.0-rc0001" include="All" />
-        <dependency id="Cake.Common" version="1.0.0-rc0001" include="All" />
+        <dependency id="Cake.Core" version="1.0.0-rc0002" include="All" />
+        <dependency id="Cake.Common" version="1.0.0-rc0002" include="All" />
       </group>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Cake.Core" version="1.0.0-rc0001" include="All" />
-        <dependency id="Cake.Common" version="1.0.0-rc0001" include="All" />
+        <dependency id="Cake.Core" version="1.0.0-rc0002" include="All" />
+        <dependency id="Cake.Common" version="1.0.0-rc0002" include="All" />
       </group>
       <group targetFramework=".NETFramework4.6">
-        <dependency id="Cake.Core" version="1.0.0-rc0001" include="All" />
-        <dependency id="Cake.Common" version="1.0.0-rc0001" include="All" />
+        <dependency id="Cake.Core" version="1.0.0-rc0002" include="All" />
+        <dependency id="Cake.Common" version="1.0.0-rc0002" include="All" />
       </group>
     </dependencies>
   </metadata>
