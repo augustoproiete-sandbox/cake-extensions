@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cake.Extensions.PoC" Version="0.0.1-preview" PrivateAssets="All" />
+    <PackageReference Include="Cake.Extensions.PoC" Version="0.0.2-preview" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
