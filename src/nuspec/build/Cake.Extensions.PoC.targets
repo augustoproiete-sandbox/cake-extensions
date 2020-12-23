@@ -18,15 +18,4 @@ Copyright (C) C. Augusto Proiete & Contributors
     <PackageReference Update="Cake.Extensions.PoC" PrivateAssets="All" />
   </ItemGroup>
 
-  <Target Name="CakeExtensionsSetAsDevelopmentDependency"
-          BeforeTargets="CollectPackageReferences">
-
-    <ItemGroup>
-      <PackageReference Update="Cake.Extensions.PoC">
-        <PrivateAssets>All</PrivateAssets>
-      </PackageReference>
-    </ItemGroup>
-
-  </Target>
-
 </Project>
